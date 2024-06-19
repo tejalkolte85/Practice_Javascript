@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            
+            function getObject(eventObject){
+                console.log(eventObject)
+                var buttondomElement = eventObject.target;
+                buttondomElement.style.color="red";
+                buttondomElement.addEventListener("mouseenter" ,
+                function(){
+                    buttondomElement.style.backgroundColor="skyblue";
+                    
+                })
+
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Event Object</h2>
+        <button onclick="getObject(event)">Get Event Object</button>
+    </body>
+</html>

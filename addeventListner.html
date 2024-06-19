@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <title>Browser</title>
+  <script>
+    function changeStyle(){
+        document.querySelector('h1').style.color="green";
+    }
+    function fnaddEventListner(){
+    var buttonDomElement = document.querySelector("button");
+    //buttonDomElement.addEventListener("click", function(){document.querySelector("h1").style.color="red";})
+    buttonDomElement.innerText="with Event handler";
+    buttonDomElement.addEventListener('mouseenter', changeStyle);
+    }
+    
+  </script>
+</head>
+
+<body>
+  <h1>AddeventListner</h1>
+  
+  <button>without EventListner</button>
+  <input type="checkbox" onchange="fnaddEventListner()" />Add EventListner
+ 
+</body>
+
+</html>
